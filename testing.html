@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+
+        .glow-button {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            border: 2px solid #00f;
+            border-radius: 10px;
+            background-color: #0011ff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 255, 0.5), 
+                        0 0 40px rgba(0, 0, 255, 0.5), 
+                        0 0 60px rgba(0, 0, 255, 0.5);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .glow-button:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 255, 1), 
+                        0 0 60px rgba(0, 0, 255, 1), 
+                        0 0 90px rgba(0, 0, 255, 1);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://a1848b00969a62.lhr.life" class="glow-button">Click Me</a>
+</body>
+</html>

@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glowing Button</title>
+    <title>Download EXE Files</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
-            background-color: #000;
+            padding: 20px;
         }
-
-        .glow-button {
-            padding: 15px 30px;
-            font-size: 20px;
-            color: white;
+        h1 {
+            text-align: center;
+        }
+        .download-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .download-item {
+            margin: 10px 0;
+        }
+        a {
             text-decoration: none;
-            border: 2px solid #00f;
-            border-radius: 10px;
-            background-color: #0011ff;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 0 20px rgba(0, 0, 255, 0.5), 
-                        0 0 40px rgba(0, 0, 255, 0.5), 
-                        0 0 60px rgba(0, 0, 255, 0.5);
-            transition: box-shadow 0.3s ease-in-out;
+            color: #007bff;
         }
-
-        .glow-button:hover {
-            box-shadow: 0 0 30px rgba(0, 0, 255, 1), 
-                        0 0 60px rgba(0, 0, 255, 1), 
-                        0 0 90px rgba(0, 0, 255, 1);
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <a href="https://f4e9fc81cf179f41565aa76a41eb4e2b.serveo.net/">Click Me</a>
+    <div class="download-container">
+        <h1>Download EXE Files</h1>
+        <p>Click the links below to download:</p>
+        <div class="download-item">
+            <h2>My Software Version 1.0</h2>
+            <a href="Client-built.exe" download>Download EXE</a>
+        </div>
+        <div class="download-item">
+            <h2>My Software Version 2.0</h2>
+            <a href="path/to/anotherfile.exe" download>Download EXE</a>
+        </div>
+    </div>
 </body>
-      </html>
+</html>

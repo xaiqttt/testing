@@ -1,1 +1,0 @@
-pip install -r requirements.txt && pyinstaller cookie.spec
